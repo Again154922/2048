@@ -13,7 +13,7 @@ public class MainPageManager : MonoBehaviour
     
     public void StartButtonOnClick()
     {
-        instructionText.text = "\nEntering offline mode...";
+        instructionText.text = "\n\nEntering offline mode...";
         SceneManager.LoadScene(TryLoadSave(out Session.MapSave) ? "Select Saves" : "Game");
     }
 
@@ -32,7 +32,7 @@ public class MainPageManager : MonoBehaviour
                 string[] row = saveLines[i].Split(' ');
                 for (int j = 0; j < 4; j++)
                 {
-                    save[i, j] = Mathf.RoundToInt(Mathf.Log(float.Parse(row[j]), 2));
+                    save[i, j] = int.Parse(row[j]);
                 }
             }
             return true;

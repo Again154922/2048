@@ -91,7 +91,11 @@ public class BlockManager : MonoBehaviour
 
     void ShowMap()
     {
-        foreach (var o in blockList) Destroy(o);
+        foreach (var o in blockList)
+        {
+            o.SetActive(false);
+            Destroy(o);
+        }
         blockList.Clear();
         
         for (int i = 0; i < 4; i++)

@@ -1141,7 +1141,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80c8f871bacfb07488b556d794952863, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blockManager: {fileID: 0}
   CurrentBestValue: {fileID: 359519335}
   HistoryBestValue: {fileID: 1728620270}
   NewBestInstruction: {fileID: 193344523}
@@ -2368,6 +2367,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2003947613}
   - component: {fileID: 2003947612}
+  - component: {fileID: 2003947614}
   m_Layer: 0
   m_Name: Board
   m_TagString: Untagged
@@ -2442,6 +2442,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2003947614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003947611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf4c94c5077542648bad462401955f15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentBest: 0
+  HistoryBest: 0
+  blockPrefab0: {fileID: 0}
+  blockPrefab2: {fileID: 0}
+  blockPrefab4: {fileID: 0}
+  blockPrefab8: {fileID: 0}
+  blockPrefab16: {fileID: 0}
+  blockPrefab32: {fileID: 0}
+  blockPrefab64: {fileID: 0}
+  blockPrefab128: {fileID: 0}
+  blockPrefab256: {fileID: 0}
+  blockPrefab512: {fileID: 0}
+  blockPrefab1024: {fileID: 0}
+  blockPrefab2048: {fileID: 0}
+  blockPrefab4096: {fileID: 0}
+  blockPrefab8192: {fileID: 0}
+  blockPrefab16384: {fileID: 0}
+  blockPrefab32768: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
